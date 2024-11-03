@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #ff3333;
+    --secondary-color: #333333;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-svg {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo-svg:hover {
+    transform: rotate(5deg);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255,51,51,0.1) 0%, rgba(255,255,255,1) 100%);
+    padding: 2rem;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #383636;
+}
+
+.mission-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de actividades */
+#activities.section {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    color: #e63946; /* Rojo vibrante */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    background-color: #f8f8f8;
+    border: 2px solid #e63946; /* Borde rojo para resaltar */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+.activity-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.activity-content {
+    padding: 1rem;
+    color: #333;
+}
+
+.activity-date {
+    color: #e63946; /* Rojo para la fecha */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.activity-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.activity-content p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .activities-container {
+        grid-template-columns: 1fr;
+    }
+}

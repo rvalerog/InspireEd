@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Libro abierto base -->
+    <path d="M 10 30 Q 50 20, 90 30 Q 50 40, 10 30" fill="#ff3333"/>
+    <path d="M 10 30 Q 50 20, 90 30 L 90 70 Q 50 60, 10 70 Z" fill="#ff5555"/>
+    
+    <!-- Páginas -->
+    <path d="M 50 20 L 50 60" stroke="#ffffff" stroke-width="1"/>
+    
+    <!-- Bombilla de idea -->
+    <circle cx="50" cy="15" r="10" fill="#ffdd00"/>
+    <path d="M 50 25 L 50 35" stroke="#ffdd00" stroke-width="3"/>
+    
+    <!-- Destellos de luz -->
+    <path d="M 40 15 L 35 15" stroke="#ffdd00" stroke-width="2"/>
+    <path d="M 60 15 L 65 15" stroke="#ffdd00" stroke-width="2"/>
+    <path d="M 50 5 L 50 0" stroke="#ffdd00" stroke-width="2"/>
+    
+    <!-- Elementos educativos flotando -->
+    <text x="30" y="45" fill="#ffffff" font-size="8">A+</text>
+    <text x="60" y="45" fill="#ffffff" font-size="8">∑</text>
+</svg>
